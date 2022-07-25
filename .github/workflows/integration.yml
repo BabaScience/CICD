@@ -1,0 +1,24 @@
+
+name: Continuous Integration
+
+
+on:
+  push:
+    branches: ["main"]
+
+
+
+jobs:
+
+  build:
+    run-on: ubuntu-latest
+
+    step: 
+      - uses: actions/checkout@v3
+
+      - name: greeting
+        run: echo hello world!
+
+      - name: done
+        run: | 
+          echo done!
