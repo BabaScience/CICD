@@ -39,7 +39,7 @@ jobs:
 
       - 
         name: Test
-        run: docker-compose run app python manage.py test
+        run: docker-compose run web python manage.py test
 
       - 
         name: Done
